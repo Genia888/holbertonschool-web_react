@@ -43,8 +43,6 @@ studentsList.forEach((student) => {
 
   row.appendChild(firstNameCell);
   row.appendChild(locationCell);
-  row.appendChild(ageCell);
-  row.appendChild(lastNameCell);
   table.appendChild(row);
 });
 
