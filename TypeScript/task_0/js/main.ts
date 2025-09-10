@@ -32,16 +32,18 @@ studentsList.forEach((student) => {
   const firstNameCell = document.createElement('td');
   firstNameCell.textContent = student.firstName;
 
-  const locationCell = document.createElement('td');
-  locationCell.textContent = student.location;
+  const lastNameCell = document.createElement('td');
+  lastNameCell.textContent = student.lastName;
 
   const ageCell = document.createElement('td');
   ageCell.textContent = student.age.toString();
 
-  const lastNameCell = document.createElement('td');
-  lastNameCell.textContent = student.lastName; 
+  const locationCell = document.createElement('td');
+  locationCell.textContent = student.location;
 
   row.appendChild(firstNameCell);
+  row.appendChild(lastNameCell);
+  row.appendChild(ageCell);
   row.appendChild(locationCell);
   table.appendChild(row);
 });
